@@ -1,14 +1,56 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-
 body {
-    background-color: blueviolet;
+    background-color: hsl(212, 45%, 89%);
+}
+.attribution {
+    font-size: 11px;
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.qr_frame{
+    height: 440px;
+    max-width: 340px;
+    /* outline: black dotted; */
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px hsl(220, 15%, 55%);
+    background-color: hsl(0, 0%, 100%);
+}
+.qr_frame img{
+    max-width: 90%;
+    max-height: 75%;
+    position: absolute;
+    /* padding: 10px; */
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+.qr_frame_caption{
+    border: dotted black;
+    position: absolute;
+    bottom: 20px;
+    left: 12.5%;
+    height: 20%;
+    width: 70%;
+    max-width: 70%;
+    max-height: 20%;
+    overflow: hidden;
+}
+.qr_frame_caption p, h2{
+    padding: 10px;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
+    color: #fff;
 }
 
 @media only screen and (max-width: 375px) {
-    body {
-        background-color: green;
-    }
+
 }
 
